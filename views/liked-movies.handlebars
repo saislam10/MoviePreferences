@@ -1,0 +1,12 @@
+<div class="movies-wrapper">
+{{#each data}}
+<section class="card">
+
+    <header data-title={{movie_title}} class="movie-title">{{movie_title}}</header>
+    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500{{movie_poster}}" alt="{{movie_title}}">
+    <button type="button" class="savebtn" data-id="{{id}}">Delete</button>
+</section>
+{{/each}}
+</div>
+
+<script src="./js/deleteFavorite.js"></script>

@@ -1,0 +1,23 @@
+<section class="card">
+    <p class="searchH2"> Search for Your Favorite Movies!<p>
+  <form id="movie-search" action="/search-results">
+    <div class="search-card">
+      <input type="text" id="title" name="title" placeholder="Search" />
+    </div>
+    <div>
+      <button id="searchBtn" type="submit" value="Search">Submit</button>
+    </div>
+  </form>
+</section>
+
+{{#if original_title}}
+<div>
+
+    <h2>{{original_title}}</h2>
+    <img
+      src="https://image.tmdb.org/t/p/w500{{poster_path}}"
+      alt="{{original_title}}"
+    />
+  </a>
+</div>
+{{/if}}

@@ -1,0 +1,13 @@
+<div class="movies-wrapper">
+
+{{#each movies}}
+<section class="card">
+
+    <header data-title="{{title}}" class="movie-title">{{title}}</header>
+    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="{{title}}">
+    <button type="button" class="savebtn" data-id="{{id}}">Save</button>
+</section>
+{{/each}}
+</div>
+
+<script src="./js/savemovie.js"></script>

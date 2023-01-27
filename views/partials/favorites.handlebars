@@ -1,0 +1,9 @@
+{{#each movies}}
+    <section class="card">
+
+    <header data-title={{title}} class="movie-title">{{title}}</header>
+    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="{{title}}">
+</section>
+{{/each}}
+
+<script src="./js/savemovie.js"></script> 
